@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion "27.0.0"
+    namespace 'com.borjabravo.readmoretextview'
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.borjabravo.readmoretextview"
-        minSdkVersion 14
-        targetSdkVersion 27
+        minSdk 14
+        targetSdk 34
         versionCode 1
         versionName "1.0"
     }
@@ -17,6 +17,7 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    
     }
 
     lintOptions {
@@ -25,8 +26,12 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support:appcompat-v7:27.0.0'
-    implementation 'com.android.support:design:27.0.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
     implementation project(':readmoretextview')
     testImplementation 'junit:junit:4.12'
 }
+
+
+
+

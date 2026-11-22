@@ -1,7 +1,7 @@
-package com.borjabravo.readmoretextviewsample;
+﻿package com.borjabravo.readmoretextviewsample;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,3 +20,4 @@ public class MainActivity extends AppCompatActivity {
         text4.setText(getString(R.string.one_line_text));
     }
 }
+
